@@ -1,0 +1,70 @@
+:root {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --text: #e0e0e0;
+  --btn-gradient: linear-gradient(135deg, #d0c8de, #441a87);
+}
+#root{
+  background-color: var(--bg);
+}
+#Calc{
+  width: 21%;
+  min-width: 400px;
+  height: 60vh;
+  border-radius: 2rem;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 20px;
+  overflow: hidden;
+}
+#Buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 100%;
+}
+#display{
+  background-color: var(--text);
+  border-radius: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#Value{
+  position: absolute;
+  color: var(--surface);
+  font-size: 2rem;
+  background-color: transparent ;
+  border: none;
+  padding: 0;
+}
+#Value:focus{
+  outline: none;
+}
+#LastValue{
+  position: absolute;
+  transform: translateY(-2.6vh);
+  color: #16213e90;
+}
+.button{
+  flex: 0 0 calc(25% - 20px);
+  border: none;
+  border-radius: 1rem;
+  background-image: var(--btn-gradient);
+  color: var(--text);
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+}
+input, p{
+  margin: 0;
+}
+.button:hover{
+  box-shadow: 3px 3px 0 #7b2ff7;
+}
