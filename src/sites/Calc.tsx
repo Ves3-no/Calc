@@ -4,7 +4,7 @@ import { useState } from "react"
 function Calc() {
     const [Value, setValue] = useState("")
     const [lastValue, setLastValue] = useState("")
-    const buttons = ["%", "(", ")", ",", "1", "2", "3", "+", "4", "5", "6", "-", "7", "8",  "9", "/", "Clear", "0", "=", "*"]
+    const buttons = ["%", "(", ")", ".", "1", "2", "3", "+", "4", "5", "6", "-", "7", "8",  "9", "/", "Clear", "0", "=", "*"]
     return (
         <div id="Calc">
             <div id="display">
